@@ -1,4 +1,4 @@
-/*Tipografía-Estilos generales*/
+
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;400&family=Gruppo&family=Montserrat:wght@100;200;400;800&family=Work+Sans:wght@100;200;300&display=swap');
 
@@ -304,7 +304,8 @@ footer i:hover{
     align-items: center;
   }
   .parallax {
-    background-image: url("/img/Home/bd4eac57a4b5f88ee9fb86c241945ed5.webp"); 
+    /* background-image: url("");  */
+    background-color: blueviolet;
   }
 
   .parallax h2{
@@ -314,13 +315,16 @@ footer i:hover{
   }
 
   .parallax1 {
-    background-image: url("/img/Home/01.jpg");
+    /* background-image: url(""); */
+    background-color: aqua;
   }
   .parallax2 {
-    background-image: url("/img/Home/");
+    /* background-image: url("img/Home/01.jpg"); */
+    background-color: blue;
   }
   .parallax3 {
-    background-image: url("/img/Home/09.jpg");
+    background-image: url("https://st.depositphotos.com/1016440/2534/i/950/depositphotos_25344733-stock-photo-sunrise-at-the-beach.jpg");
+    /* background-color: chartreuse; */
   }
 
   .text-bloc p {
