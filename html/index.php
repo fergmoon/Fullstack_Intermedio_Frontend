@@ -1,33 +1,27 @@
 <?php
-if (isset($_GET['status'])){
-    if($_GET['status']==1){
-      echo '<script>alert("Registro Exitoso!");</script>';
-    }
-    if($_GET['status']==2){
-      echo '<script>alert("El usuario ya se encuentra registrado");</script>';
-    }
+if (isset($_GET['status'])) {
+  if ($_GET['status'] == 1) {
+    echo '<script>alert("Registro Exitoso!");</script>';
+  }
+  if ($_GET['status'] == 2) {
+    echo '<script>alert("El usuario ya se encuentra registrado");</script>';
+  }
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
   <script src="https://kit.fontawesome.com/0b9545bc74.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <link rel="stylesheet" href="../css/Estilos/styles.css">
 
 
@@ -52,7 +46,7 @@ if (isset($_GET['status'])){
 <body>
   <!-- Container element -->
   <section class="section-background parallax">
-    <h2>Design</h2>    
+    <h2>Design</h2>
   </section>
   <section class="text-bloc">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos eum ipsa libero ducimus necessitatibus.</p>
@@ -73,16 +67,14 @@ if (isset($_GET['status'])){
 
           <section class="section-background parallax3">
             <!-- BOTON REGISTRARSE  -->
-            <button type="button" class="btn_register" data-toggle="modal"
-              data-target="#register_modal">Registrate</button>
+            <button type="button" class="btn_register" data-toggle="modal" data-target="#register_modal">Registrate</button>
 
             <!-- BOTON INGRESAR  -->
             <button class="btn_login" data-toggle="modal" data-target="#login_modal">Ingresa</button>
 
 
             <!-- Modal de Registro-->
-            <div class="modal fade" id="register_modal" tabindex="-1" role="dialog"
-              aria-labelledby="register_modalLabel" aria-hidden="true">
+            <div class="modal fade" id="register_modal" tabindex="-1" role="dialog" aria-labelledby="register_modalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -97,13 +89,11 @@ if (isset($_GET['status'])){
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="inputnombres">Nombres</label>
-                          <input type="text" class="form-control" name="names" id="inputnombres"
-                            placeholder="Digite sus nombres" required>
+                          <input type="text" class="form-control" name="names" id="inputnombres" placeholder="Digite sus nombres" required>
                         </div>
                         <div class="form-group col-md-6">
                           <label for="inputapellidos">Apellidos</label>
-                          <input type="text" class="form-control" name="lastname" id="inputapellidos"
-                            placeholder="Digite sus Apellidos" required>
+                          <input type="text" class="form-control" name="lastname" id="inputapellidos" placeholder="Digite sus Apellidos" required>
                         </div>
                       </div>
                       <div class="form-row">
@@ -126,7 +116,7 @@ if (isset($_GET['status'])){
                           <input type="password" class="form-control" name="pass" id="inputcontra" required>
                         </div>
                       </div>
-                      <button name="register_btn" type="submit" class="btn_login">Registrarse</button>
+                      <button name="register-btn" type="submit" class="btn_login">Registrarse</button>
                       <button type="reset" class="btn_register">Limpiar</button>
                     </form>
                     <!-- Formulario de Registro END--> ...
@@ -136,8 +126,7 @@ if (isset($_GET['status'])){
             </div>
 
             <!-- Modal de Login-->
-            <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="login_modalLabel"
-              aria-hidden="true">
+            <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="login_modalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -147,7 +136,7 @@ if (isset($_GET['status'])){
                     </button>
                   </div>
                   <div class="modal-body">
-                    <form action="" method="POST">
+                    <form action="../back/login.php" method="POST">
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="inputnumero_id">Número de Identificación (usuario)</label>
@@ -158,10 +147,9 @@ if (isset($_GET['status'])){
                           <input type="password" class="form-control" name="pass" id="inputcontra" required>
                         </div>
                       </div>
-                      <button name="login_btn" type="submit" class="btn_login">Ingresa</button>
+                      <button name="login_btn" type="submit" class="btn_login">Registrarse</button>
                     </form>
                   </div>
-
                 </div>
               </div>
             </div>

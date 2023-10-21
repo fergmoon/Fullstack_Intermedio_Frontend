@@ -17,7 +17,7 @@ if (isset($_POST['register_btn'])){
     $pass_en = base64_encode($pass);
 
     $validacion = mysqli_query($conexion, "SELECT * FROM users where id_person = '$id_person'");
-    $cant = mysqli_num_rows($validacion);
+    $cant = mysqli_num_rows($validacion);  /*validación cedula existe*/
 
     if($cant ==1){
         header('location:../html/index.php?status=2');
