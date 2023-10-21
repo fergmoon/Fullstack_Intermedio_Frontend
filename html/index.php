@@ -85,7 +85,7 @@ if (isset($_GET['status'])) {
                   </div>
                   <div class="modal-body">
                     <!-- Formulario de Registro START-->
-                    <form action="../back/registro.php" method="POST">
+                    <form action="../back/register.php" method="POST">
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="inputnombres">Nombres</label>
@@ -116,7 +116,7 @@ if (isset($_GET['status'])) {
                           <input type="password" class="form-control" name="pass" id="inputcontra" required>
                         </div>
                       </div>
-                      <button name="register-btn" type="submit" class="btn_login">Registrarse</button>
+                      <button name="register_btn" type="submit" class="btn_login">Registrarse</button>
                       <button type="reset" class="btn_register">Limpiar</button>
                     </form>
                     <!-- Formulario de Registro END--> ...
@@ -147,7 +147,7 @@ if (isset($_GET['status'])) {
                           <input type="password" class="form-control" name="pass" id="inputcontra" required>
                         </div>
                       </div>
-                      <button name="login_btn" type="submit" class="btn_login">Registrarse</button>
+                      <button name="login_btn" type="submit" class="btn_login">Ingresa</button>
                     </form>
                   </div>
                 </div>

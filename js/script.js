@@ -8,8 +8,9 @@ class headermain extends HTMLElement{
         <h1>FERNANDO GOMEZ</h1>
         <nav>
             <ul>
+            
                 <li>                
-                    <a href="../html/index.html">home</a>
+                    <a href="../html/index.php">home</a>
                 </li>            
                     <li id="dropdown" class="dropdown">
                         <a class="dropbtn" href="../html/fun.html">Fun</a>
