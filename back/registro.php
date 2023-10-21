@@ -14,24 +14,17 @@ if (isset($_POST['register_btn'])){
     $email = $_POST['email'];
     $pass = $_POST['pass'];
 
+    $pass_en = base64_encode($pass);
+
+    $validacion = mysqli_query($conexion, "SELECT * FROM users where id_person = '$id_person'");
+    $cant = mysqli_num_rows($validacion);
+
+    if($cant ==1){
+        header('location:../html/index.php?status=2');
+    }else{
     $sql = mysqli_query($conexion,"INSERT INTO users 
-    (names,lastname,birth,id_person,email,pass) VALUES ('$names','$lastname','$birth','$id_person','$email','$pass')");
-
+    (names,lastname,birth,id_person,email,pass) VALUES ('$names','$lastname','$birth','$id_person','$email','$pass_en')");
     header('location:../html/index.php?status=1');//regresa al index OK la peticion
-
-
-
-
-
+    }
 }
-
-
-
-
-
-
-
-
-
-
 ?>

@@ -1,6 +1,11 @@
 <?php
 if (isset($_GET['status'])){
-  echo '<script>alert("Registro Exitoso!");</script>';
+    if($_GET['status']==1){
+      echo '<script>alert("Registro Exitoso!");</script>';
+    }
+    if($_GET['status']==2){
+      echo '<script>alert("El usuario ya se encuentra registrado");</script>';
+    }
 }
 ?>
 <!DOCTYPE html>
