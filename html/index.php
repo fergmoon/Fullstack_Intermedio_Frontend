@@ -6,6 +6,9 @@ if (isset($_GET['status'])) {
   if ($_GET['status'] == 2) {
     echo '<script>alert("El usuario ya se encuentra registrado");</script>';
   }
+  if ($_GET['status'] == 3) {
+    echo '<script>alert("Acceso Denegado");</script>';
+  }
 }
 ?>
 <!DOCTYPE html>
