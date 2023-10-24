@@ -14,11 +14,11 @@ header('Content-Type: text/html; charset=utf-8');
     $email = $_SESSION['email']; 
 
 // Asegúrate de que las variables estén definidas y tengan valores
-var_dump($nombre);
-var_dump($apellido);
+// var_dump($nombre);
+// var_dump($apellido);
 
 // Asegúrate de que el código se está ejecutando
-echo 'Este código se está ejecutando';
+//echo 'Este código se está ejecutando';
 
 // Línea que imprime las variables
 echo '<h1>HOLA '.$nombre.' '.$apellido.'</h1>';

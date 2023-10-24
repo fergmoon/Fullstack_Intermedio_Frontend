@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;400&family=Gruppo&family=Montserrat:wght@100;200;400;800&family=Work+Sans:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
 
 *{
     border: 0;
@@ -292,7 +292,7 @@ footer i:hover{
     width: 50%;  
   }
 
-  .section-background {
+  /* .section-background {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -302,39 +302,87 @@ footer i:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+  } */
+
+
+  
+  /* PARA VIDEO CAMBIO   INICIO*/
+
+
+  .section-background { 
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.section-background video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.text-content {
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.text-content h2 {
+    font-size: 3em;
+}
+
+.text-content p {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*===============VIDEO CAMBIOS==fin================*/
+h2 {
+    font-size: 125px;  
+  }
+  .section-background {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .parallax {
-    /* background-image: url("");  */
-    background-color: blueviolet;
+    background-image: url("https://images.unsplash.com/photo-1558985040-ed4d5029dd50?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzODkxNjg&ixlib=rb-1.2.1&q=80"); 
   }
-
-  .parallax h2{
-    color:rgba(255, 255, 255, 0.7); 
-    font-family:'Montserrat', sans-serif;
-    font-weight: 200;
-  }
-
   .parallax1 {
-    /* background-image: url(""); */
-    background-color: aqua;
+    background-image: url("https://images.unsplash.com/photo-1610128114197-485d933885c5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTA2Nzc&ixlib=rb-1.2.1&q=80");
   }
   .parallax2 {
-    /* background-image: url("img/Home/01.jpg"); */
-    background-color: blue;
+    background-image: url("https://images.unsplash.com/photo-1562095241-8c6714fd4178?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTA5OTg&ixlib=rb-1.2.1&q=80");
   }
   .parallax3 {
-    background-image: url("https://st.depositphotos.com/1016440/2534/i/950/depositphotos_25344733-stock-photo-sunrise-at-the-beach.jpg");
-    /* background-color: chartreuse; */
+    background-image: url("https://images.unsplash.com/photo-1543722530-d2c3201371e7?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTExOTg&ixlib=rb-1.2.1&q=80");
   }
-
   .text-bloc p {
-    width: 100%;
-    height: auto;
-    font-size: 32px;
-    text-align:center ;
-    color: rgb(253, 253, 253);
-    background-color: #000000;
-    padding: 10px;
+    margin: 75px;
+    font-size: 22px;
   }
 
 /*=====Botones Registro/Ingreso==========*/
@@ -402,3 +450,31 @@ footer i:hover{
   .modal .close{
     margin-top: -60px;
   }
+
+
+  /*=====ESTILOS DEL VIDOE DEL PARALLAX  */
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Esto asegura que el video cubra completamente el contenedor */
+}
+
+.video-container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: white;
+}
