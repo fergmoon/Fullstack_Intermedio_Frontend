@@ -52,7 +52,13 @@ if (isset($_GET['status'])) {
   <!-- Container element -->
 
   <section class="section-background parallax">
-    <h2>Desert</h2>
+    <div>
+    <video autoplay muted loop>
+            <source src="https://player.vimeo.com/external/535950529.sd.mp4?s=31702bc51cf2a829edbac94e33ba4d7400efc40b&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+        </video>
+        <h2>Design</h2>
+    </div>
+    
   </section>
   <section class="text-bloc">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</p>
