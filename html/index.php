@@ -54,11 +54,7 @@ if (isset($_GET['status'])) {
   <section class="section-background parallax">
     <h2>Design. Form and function</h2>
   </section>
-  <!-- <section>
-    <video autoplay muted loop>
-      <source src="https://player.vimeo.com/external/535950529.sd.mp4?s=31702bc51cf2a829edbac94e33ba4d7400efc40b&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
-    </video>
-  </section> -->
+
   <section class="text-bloc">
     <p>From initial concepts to final products, each work is a testament to the creative journey. Lines, textures, precisely selected materials that transform ideas into objects that enhance everyday life.</p>
     <p>Shape and function intertwine in each design. Each piece is a symphony of elegance and utility where every curve and every detail has a defined purpose.</p>
@@ -82,15 +78,20 @@ if (isset($_GET['status'])) {
 
           <section class="section-background parallax3">
             <h2>A Glimpse into the Future of Design</h2>
-          </section>
-          <p>Welcome to a place where creativity and functionality converge to shape a better future. Delve into the portfolio and discover the limitless potential of industrial design.</p>
 
-          <section class="section-background parallax3">
-            <!-- BOTON REGISTRARSE  -->
-            <button type="button" class="btn_register" data-toggle="modal" data-target="#register_modal">Registrate</button>
+            <video autoplay muted loop>
+              <source src="https://player.vimeo.com/external/535950529.sd.mp4?s=31702bc51cf2a829edbac94e33ba4d7400efc40b&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+            </video>
+            <p>Welcome to a place where creativity and functionality converge to shape a better future. Delve into the portfolio and discover the limitless potential of industrial design.</p>
 
-            <!-- BOTON INGRESAR  -->
-            <button class="btn_login" data-toggle="modal" data-target="#login_modal">Ingresa</button>
+            <!-- <section class="parallax3 buttons"> -->
+              <!-- BOTON REGISTRARSE  -->
+              <button type="button" class="btn_register" data-toggle="modal" data-target="#register_modal">Registrate</button>
+
+              <!-- BOTON INGRESAR  -->
+              <button class="btn_login" data-toggle="modal" data-target="#login_modal">Ingresa</button>
+              
+            </section>
 
 
             <!-- Modal de Registro-->
@@ -177,7 +178,6 @@ if (isset($_GET['status'])) {
                 </div>
               </div>
             </div>
-
           </section>
         </section>
 
