@@ -52,32 +52,38 @@ if (isset($_GET['status'])) {
   <!-- Container element -->
 
   <section class="section-background parallax">
-    <div>
-    <video autoplay muted loop>
-            <source src="https://player.vimeo.com/external/535950529.sd.mp4?s=31702bc51cf2a829edbac94e33ba4d7400efc40b&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
-        </video>
-        <h2>Design</h2>
-    </div>
-    
+    <h2>Design. Form and function</h2>
   </section>
+  <!-- <section>
+    <video autoplay muted loop>
+      <source src="https://player.vimeo.com/external/535950529.sd.mp4?s=31702bc51cf2a829edbac94e33ba4d7400efc40b&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+    </video>
+  </section> -->
   <section class="text-bloc">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</p>
-    <section>
-      <section class="section-background parallax1">
-        <h2>Mountain</h2>
-      </section>
+    <p>From initial concepts to final products, each work is a testament to the creative journey. Lines, textures, precisely selected materials that transform ideas into objects that enhance everyday life.</p>
+    <p>Shape and function intertwine in each design. Each piece is a symphony of elegance and utility where every curve and every detail has a defined purpose.</p>
 
-      <section class="text-bloc">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima fuga debitis quasi eius aliquid sapiente? Cumque blanditiis quibusdam, ex totam aliquam provident alias culpa, sit illo, eum doloribus doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit voluptatum aperiam pariatur numquam praesentium recusandae, ipsa at iusto eveniet, distinctio sunt dolore nemo veniam maiores vitae deserunt cum ducimus.</p>
-        <section>
+    <section class="section-background parallax1">
+      <h2>Innovation that drives the future</h2>
+    </section>
 
-          <section class="section-background parallax2">
-            <h2>Sea</h2>
-          </section>
+    <section class="text-bloc">
+      <p>Designs that go beyond the conventional. From ergonomic solutions to cutting-edge technologies, each project is a bold vision that anticipates the needs of tomorrow.</p>
+      <p>A Sensorial and Visual aesthetic experience.</p>
+      <p>Each project is a multi-sensory experience. The texture you feel, the colours that captivate and the ergonomics that adapt; each element is a work of art in itself.</p>
+
+      <section>
+
+        <section class="section-background parallax2">
+          <h2>Commitment to Excellence</h2>
+        </section>
+        <section class="text-bloc">
+          <p>Each design represents a commitment to quality and excellence. Each prototype is a quest for perfection, where meticulous attention to detail merges with precision craftsmanship.</p>
+
           <section class="section-background parallax3">
-            <h2>Galaxy</h2>
+            <h2>A Glimpse into the Future of Design</h2>
           </section>
+          <p>Welcome to a place where creativity and functionality converge to shape a better future. Delve into the portfolio and discover the limitless potential of industrial design.</p>
 
           <section class="section-background parallax3">
             <!-- BOTON REGISTRARSE  -->
