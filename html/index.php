@@ -65,7 +65,7 @@ if (isset($_GET['status'])) {
 
     <section class="text-bloc">
       <p>Designs that go beyond the conventional. From ergonomic solutions to cutting-edge technologies, each project is a bold vision that anticipates the needs of tomorrow.</p>
-      <p>A Sensorial and Visual aesthetic experience.</p>
+      <h3>A Sensorial and Visual aesthetic experience.</h3>
       <p>Each project is a multi-sensory experience. The texture you feel, the colours that captivate and the ergonomics that adapt; each element is a work of art in itself.</p>
 
       <section>
@@ -85,103 +85,103 @@ if (isset($_GET['status'])) {
             <p>Welcome to a place where creativity and functionality converge to shape a better future. Delve into the portfolio and discover the limitless potential of industrial design.</p>
 
             <!-- <section class="parallax3 buttons"> -->
-              <!-- BOTON REGISTRARSE  -->
-              <button type="button" class="btn_register" data-toggle="modal" data-target="#register_modal">Registrate</button>
+            <!-- BOTON REGISTRARSE  -->
+            <button type="button" class="btn_register" data-toggle="modal" data-target="#register_modal">Registrate</button>
 
-              <!-- BOTON INGRESAR  -->
-              <button class="btn_login" data-toggle="modal" data-target="#login_modal">Ingresa</button>
-              
-            </section>
+            <!-- BOTON INGRESAR  -->
+            <button class="btn_login" data-toggle="modal" data-target="#login_modal">Ingresa</button>
 
-
-            <!-- Modal de Registro-->
-            <div class="modal fade" id="register_modal" tabindex="-1" role="dialog" aria-labelledby="register_modalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="register_modalLabel">Registro de Usuario</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <!-- Formulario de Registro START-->
-                    <form action="../back/register.php" method="POST">
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="inputnombres">Nombres</label>
-                          <input type="text" class="form-control" name="names" id="inputnombres" placeholder="Digite sus nombres" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputapellidos">Apellidos</label>
-                          <input type="text" class="form-control" name="lastname" id="inputapellidos" placeholder="Digite sus Apellidos" required>
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="inputfecha_nacimiento">Fecha de Nacimiento</label>
-                          <input type="date" class="form-control" name="birth" id="inputfecha_nacimiento" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputnumero_id">Número de Identificación (Usuario)</label>
-                          <input type="text" class="form-control" name="id_person" id="inputnumero_id" required>
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="inputemail">Correo Electrónico</label>
-                          <input type="email" class="form-control" name="email" id="inputemail" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputcontra">Contraseña</label>
-                          <input type="password" class="form-control" name="pass" id="inputcontra" required>
-                        </div>
-                        <div class="form-group col-md-3">
-                          <label for="inputcontra">Contraseña 2</label>
-                          <input type="password" class="form-control" name="pass2" id="inputcontra" required>
-                        </div>
-                      </div>
-                      <button name="register_btn" type="submit" class="btn_login">Registrarse</button>
-                      <button type="reset" class="btn_register">Limpiar</button>
-                    </form>
-                    <!-- Formulario de Registro END--> ...
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Modal de Login-->
-            <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="login_modalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="login_modalLabel">Inicio de Sesión</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form action="../back/login.php" method="POST">
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label for="inputnumero_id">Número de Identificación (usuario)</label>
-                          <input type="text" class="form-control" name="id_person" id="inputnumero_id" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputcontra">Contraseña</label>
-                          <input type="password" class="form-control" name="pass" id="inputcontra" required>
-                        </div>
-                      </div>
-                      <button name="login_btn" type="submit" class="btn_login">Ingresa</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
           </section>
-        </section>
 
-        <script src="../js/script.js"></script><!--con defer--- Igual que tener el script abajo  -->
+
+          <!-- Modal de Registro-->
+          <div class="modal fade" id="register_modal" tabindex="-1" role="dialog" aria-labelledby="register_modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="register_modalLabel">Registro de Usuario</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- Formulario de Registro START-->
+                  <form action="../back/register.php" method="POST">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputnombres">Nombres</label>
+                        <input type="text" class="form-control" name="names" id="inputnombres" placeholder="Digite sus nombres" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputapellidos">Apellidos</label>
+                        <input type="text" class="form-control" name="lastname" id="inputapellidos" placeholder="Digite sus Apellidos" required>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputfecha_nacimiento">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" name="birth" id="inputfecha_nacimiento" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputnumero_id">Número de Identificación (Usuario)</label>
+                        <input type="text" class="form-control" name="id_person" id="inputnumero_id" required>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputemail">Correo Electrónico</label>
+                        <input type="email" class="form-control" name="email" id="inputemail" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputcontra">Contraseña</label>
+                        <input type="password" class="form-control" name="pass" id="inputcontra" required>
+                      </div>
+                      <div class="form-group col-md-3">
+                        <label for="inputcontra">Contraseña 2</label>
+                        <input type="password" class="form-control" name="pass2" id="inputcontra" required>
+                      </div>
+                    </div>
+                    <button name="register_btn" type="submit" class="btn_login">Registrarse</button>
+                    <button type="reset" class="btn_register">Limpiar</button>
+                  </form>
+                  <!-- Formulario de Registro END--> ...
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal de Login-->
+          <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="login_modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="login_modalLabel">Inicio de Sesión</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="../back/login.php" method="POST">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputnumero_id">Número de Identificación (usuario)</label>
+                        <input type="text" class="form-control" name="id_person" id="inputnumero_id" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputcontra">Contraseña</label>
+                        <input type="password" class="form-control" name="pass" id="inputcontra" required>
+                      </div>
+                    </div>
+                    <button name="login_btn" type="submit" class="btn_login">Ingresa</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <script src="../js/script.js"></script><!--con defer--- Igual que tener el script abajo  -->
 
 </body>
 

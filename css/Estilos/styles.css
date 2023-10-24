@@ -284,18 +284,18 @@ footer i:hover{
 }
 
  h2 {  /*Textos grandes*/
-    font-size: 200px; 
+    font-size: 100px; 
     color: rgba(255, 255, 255, 0.7); 
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     background-color: #000000ab;
-    width: 50%;  
+    width: 75%;  
+    text-align: center;
+    align-items: center;
   }
 
 /*===============VIDEO CAMBIOS==fin================*/
-h2 {
-    font-size: 100px;  
-  }
+
   .section-background {
     background-attachment: fixed;
     background-position: center;
@@ -316,6 +316,11 @@ h2 {
 
   .parallax1 {
     background-image: url("https://images.unsplash.com/photo-1610128114197-485d933885c5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTA2Nzc&ixlib=rb-1.2.1&q=80");
+  }
+
+  .parallax1 h3{
+    color: blue;
+    font-size: 2dvw;
   }
   .parallax2 {
     background-image: url("https://images.unsplash.com/photo-1562095241-8c6714fd4178?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTA5OTg&ixlib=rb-1.2.1&q=80");
@@ -359,6 +364,7 @@ h2 {
     justify-content: center;
     text-align: center;
     font-weight: 400;
+    color: #FFFFFF;
 
   }
 
