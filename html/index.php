@@ -56,9 +56,10 @@ if (isset($_GET['status'])) {
   </section>
 
   <section class="text-bloc">
-    <p>From initial concepts to final products, each work is a testament to the creative journey. Lines, textures, precisely selected materials that transform ideas into objects that enhance everyday life.</p>
-    <p>Shape and function intertwine in each design. Each piece is a symphony of elegance and utility where every curve and every detail has a defined purpose.</p>
-
+    <p>From initial concepts to final products, each work is a testament to the creative journey. Lines, textures, precisely selected materials that transform ideas into objects that enhance everyday life.
+    Shape and function intertwine in each design. Each piece is a symphony of elegance and utility where every curve and every detail has a defined purpose.
+    </p>
+    
     <section class="section-background parallax1">
       <h2>Innovation that drives the future</h2>
     </section>
