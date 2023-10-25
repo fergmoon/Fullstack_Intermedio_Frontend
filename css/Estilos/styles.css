@@ -1,17 +1,16 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
 
-*{
+* {
     border: 0;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Gruppo', sans-serif;
-    background-color:#9B968E;
+    /* background-color: #9B968E; */
 }
 
-#main-contain{
+#main-contain {
     width: 100%;
     height: 90px;
     position: relative;
@@ -20,7 +19,7 @@
     /* background-color: aqua; */
 }
 
-.menu{
+.menu {
     display: flex;
     width: 20%;
     height: auto;
@@ -28,14 +27,14 @@
     /* background-color: #919191; */
 }
 
-menu-main{
+menu-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
-menu-main h1{
+menu-main h1 {
     font-size: 22px;
     font-weight: 800;
     padding: 5px;
@@ -44,67 +43,73 @@ menu-main h1{
 
 }
 
-menu-main nav{
+menu-main nav {
     margin-top: 25px;
     width: 100%;
     /* background-color: rgba(0, 126, 19, 0.442); */
 }
 
-menu-main nav ul{
-    display:flex;
+menu-main nav ul {
+    display: flex;
     list-style: none;
     /* background-color: rgba(165, 42, 42, 0.382); */
 }
 
-menu-mainer nav ul li{
-    list-style:none;
+menu-mainer nav ul li {
+    list-style: none;
 
 }
 
-menu-main nav ul li a{
+menu-main nav ul li a {
     text-decoration: none;
-    margin:35px; /*textos menu separados*/
-    color:#303030;
+    margin: 35px;
+    /*textos menu separados*/
+    color: #303030;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
 }
 
-menu-main nav ul li a:hover{
-    color:#f9f9f97e;
+menu-main nav ul li a:hover {
+    color: #f9f9f97e;
 }
 
-.title ul{
+.title ul {
     list-style: none;
     text-align: center;
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Gruppo', sans-serif ;
+    font-family: 'Gruppo', sans-serif;
     font-weight: 600;
     /* background-color: aqua; */
-    padding: 0; /* Añadido para quitar el padding predeterminado */
+    padding: 0;
+    /* Añadido para quitar el padding predeterminado */
 }
-.title ul li a{ 
+
+.title ul li a {
     width: 60px;
     /* background-color: rgba(13, 211, 27, 0.424); */
     text-decoration: none;
-    text-transform: uppercase;    
+    text-transform: uppercase;
     font-size: 9px;
-    padding: 2px 5px; /* Añadido un padding para dar espacio */ 
-    border:1px solid #000; 
+    padding: 2px 5px;
+    /* Añadido un padding para dar espacio */
+    border: 1px solid #000;
 }
 
 .title ul li p {
-    margin: 0; /* Añadido para quitar el margen predeterminado */
+    margin: 0;
+    /* Añadido para quitar el margen predeterminado */
     text-transform: uppercase;
     font-size: 15px;
-    width: 350px;    
+    width: 350px;
 }
+
 /*============Estilos Main-Contain Paginas==============*/
 
-.galeria{
+.galeria {
     display: flex;
     width: 76%;
     height: auto;
@@ -113,20 +118,21 @@ menu-main nav ul li a:hover{
     /* background-color: rgba(255, 0, 247, 0.124); */
 }
 
-.columna{
+.columna {
     flex: 25%;
-    padding: 1px 0;   
+    padding: 1px 0;
     background-color: #695c3521;
 
-    
+
 }
-.columna a{
+
+.columna a {
     align-items: center;
     background-color: #00000000;
 }
 
 .columna img {
-    width: 98%;    
+    width: 98%;
     margin: 1%;
     padding: 2px;
     background-color: #6063472c;
@@ -135,16 +141,16 @@ menu-main nav ul li a:hover{
 
 }
 
-.columna img:hover{
+.columna img:hover {
     cursor: pointer;
     filter: grayscale(0%);
-    box-shadow:  0 0 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     transform: scale(1.05);
     background-color: rgb(255, 255, 255);
 }
 
 /*===========FOOTER  SOCIAL - MEDIA  *BEGINS*============*/
-footer{
+footer {
     width: 25%;
     left: 37%;
     margin-left: 37.5%;
@@ -154,19 +160,19 @@ footer{
     /* background-color: #ff0000e3;    */
 }
 
-footer i{  
+footer i {
     width: 20%;
-    margin-left: 4%;  
-    padding: 5px; 
+    margin-left: 4%;
+    padding: 5px;
     text-align: center;
     color: #1D1D1D;
-    font-size: 20px;       
+    font-size: 20px;
     transition: all .3s;
-    justify-content: space-around;  
+    justify-content: space-around;
     /* background-color: aqua; */
 }
 
-footer i:hover{
+footer i:hover {
     color: white;
     font-size: 25px;
     transition: all .5s;
@@ -175,132 +181,146 @@ footer i:hover{
 
 /*===========FOOTER  SOCIAL - MEDIA  *END*============*/
 
-.title ul{
+.title ul {
     list-style: none;
     text-align: center;
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Gruppo', sans-serif ;
+    font-family: 'Gruppo', sans-serif;
     font-weight: 600;
     /* background-color: aqua; */
-    padding: 0; /* Añadido para quitar el padding predeterminado */
+    padding: 0;
+    /* Añadido para quitar el padding predeterminado */
 }
 
-.title ul li { 
-    display: flex; /* Cambiado a flex */
-    align-items: center; /* Añadido para centrar verticalmente */
+.title ul li {
+    display: flex;
+    /* Cambiado a flex */
+    align-items: center;
+    /* Añadido para centrar verticalmente */
     justify-content: center;
     /* background-color: bisque; */
     margin: 10px;
-    padding: 10px; /* Añadido un padding para dar espacio */
+    padding: 10px;
+    /* Añadido un padding para dar espacio */
     height: 10px;
 
 }
 
-.title ul li a{ 
+.title ul li a {
     width: 60px;
     /* background-color: rgba(13, 211, 27, 0.424); */
     text-decoration: none;
-    text-transform: uppercase;    
+    text-transform: uppercase;
     font-size: 9px;
-    padding: 2px 5px; /* Añadido un padding para dar espacio */ 
-    border:1px solid #000; 
-    
+    padding: 2px 5px;
+    /* Añadido un padding para dar espacio */
+    border: 1px solid #000;
+
 }
 
 .title ul li p {
-    margin: 0; /* Añadido para quitar el margen predeterminado */
+    margin: 0;
+    /* Añadido para quitar el margen predeterminado */
     text-transform: uppercase;
     font-size: 15px;
     width: 350px;
 
-    
+
 }
 
- /* Dropdown Button Work */
- .dropbtn {
+/* Dropdown Button Work */
+.dropbtn {
     /* background-color: #04AA6D; */
     color: #303030;
     padding: 16px;
     font-size: 16px;
     border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
     position: relative;
     display: inline-block;
-    
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display:none;
-    position: absolute;   
-    width: 200%; 
-    background-color: #35353598; /*color fondo del drop menu*/  
-    margin-left: -50%;   
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 200%;
+    background-color: #35353598;
+    /*color fondo del drop menu*/
+    margin-left: -50%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
 
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
     /* background-color: aqua; */
     width: 100%;
-    margin:0;
-    padding: 6px 0;  /*separación textos drop menu*/    
+    margin: 0;
+    padding: 6px 0;
+    /*separación textos drop menu*/
     font-size: 13px;
     color: rgb(239, 239, 239);
     text-decoration: none;
     display: block;
 
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  Change the background color of the dropdown button when the dropdown content is shown
-  .dropdown:hover .dropbtn {background-color: #bbbbbb;} 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+Change the background color of the dropdown button when the dropdown content is shown .dropdown:hover .dropbtn {
+    background-color: #bbbbbb;
+}
 
 /*==========Estilos Menu Index===========*/
-.home{
+.home {
     background-color: #000000;
 }
 
-.home li{
+.home li {
     background-color: #00000000;
 }
 
-.home li a{
+.home li a {
     background-color: #00000000;
 }
 
- h2 {  /*Textos grandes*/
-    font-size: 100px; 
-    color: rgba(255, 255, 255, 0.7); 
+h2 {
+    /*Textos grandes*/
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.7);
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     background-color: #000000ab;
-    width: 75%;  
-    text-align: center;
-    align-items: center;
-  }
+    width: 75%;
+
+}
 
 /*===============VIDEO CAMBIOS==fin================*/
 
-  .section-background {
+.section-background {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    /* background-color: #000; */
+
+
     height: 100vh;
     width: 100%;
     display: flex;
@@ -308,36 +328,46 @@ footer i:hover{
     align-items: center;
     margin: 0;
     padding: 0;
-  }
+}
 
-  .parallax {
-    background-image: url("https://images.unsplash.com/photo-1558985040-ed4d5029dd50?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzODkxNjg&ixlib=rb-1.2.1&q=80"); 
-  }
+.parallax {
+    background-image: url("https://images.unsplash.com/photo-1558985040-ed4d5029dd50?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzODkxNjg&ixlib=rb-1.2.1&q=80");
+}
 
-  .parallax1 {
+.parallax1 {
     background-image: url("https://images.unsplash.com/photo-1610128114197-485d933885c5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTA2Nzc&ixlib=rb-1.2.1&q=80");
-  }
+}
 
-  .parallax1 h3{
+.parallax1 h3 {
     color: blue;
     font-size: 2dvw;
-  }
-  .parallax2 {
+}
+
+.parallax2 {
     background-image: url("https://images.unsplash.com/photo-1562095241-8c6714fd4178?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTA5OTg&ixlib=rb-1.2.1&q=80");
-  }
-  .parallax3 {
-    /* background-image: url("https://images.unsplash.com/photo-1543722530-d2c3201371e7?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTExOTg&ixlib=rb-1.2.1&q=80"); */
-    position: relative; /* Asegura que los elementos estén posicionados relativamente */
+}
+
+.parallax2 p {
+background-color: #ffffff;
+}
+
+.parallax3 h2,
+.parallax3 p,
+.parallax3 {
+
+    position: relative;
     height: 100vh;
     width: 100%;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Asegura que el video no se desborde */
+    overflow: hidden;
+    /* Asegura que el video no se desborde */
 
-  }
-  .parallax3 video {
+}
+
+.parallax3 video {
     position: absolute;
     top: 0;
     left: 0;
@@ -346,112 +376,122 @@ footer i:hover{
     width: auto;
     height: auto;
     z-index: 1;
-  }
-  
-  .parallax3 h2 {
-    position: relative; /* Devuelve la posición del texto a relativa para que esté sobre el video */
-    z-index: 10; /* Asegura que el texto esté sobre el video */
-    font-size: 80px ;
-    z-index: 1;
-  }
-  .text-bloc {
-    margin: 0;
+}
 
-  }
-  .text-bloc p {
+.text-bloc {  /*fondo textos Parallax*/
+    margin: 0;
+    background-color: #9B968E;
+
+}
+
+.text-bloc p {
     margin: 0 8%;
-    font-size: 1.5dvw;
+    font-size: 2dvw;
     justify-content: center;
     text-align: center;
     font-weight: 400;
     color: #FFFFFF;
 
-  }
+}
 
-  .parallax3 .text-bloc p {
+.parallax3 .text-bloc p {
     margin: 75px;
     font-size: 50px;
-  }
+}
 
-  .parallax3 .buttons{
+.parallax3 .buttons {
     background-color: aqua;
-  }
+    margin-top: 0;
 
-  .parallax3 h2, .parallax3 p, .parallax3 .buttons {
+}
+
+.parallax3 h2,
+.parallax3 p,
+.parallax3 .buttons {
     position: relative;
     z-index: 10;
-  }
-  
+    color: #ffffff
+}
+
+
+
 /*=====Botones Registro/Ingreso==========*/
 
 
 .btn_register {
-    width:130px; 
-    height: 35px; 
+    width: 130px;
+    height: 35px;
     margin-top: 1.5%;
     font-size: 16px;
-    color:#ffffff;
-    background-color:rgb(0, 0, 0);
-    border-radius: 10px; 
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    z-index: 2;
 }
 
-.btn_register:hover , .btn_login:hover, #btn_limpiar:hover{    
+.btn_register:hover,
+.btn_login:hover,
+#btn_limpiar:hover {
     -webkit-box-shadow: 0px 6px 32px 1px rgba(255, 255, 255, 0.765);
     transition: all .3s;
 
 }
 
-.btn_login{
-    width:130px; 
-    height: 35px; 
+.btn_login {
+    width: 130px;
+    height: 35px;
     margin-top: 1.5%;
     font-size: 16px;
-    color:#ffffff;
-    background-color:rgb(0, 0, 0);
-    border-radius: 10px; 
-    margin-left: 3%;   
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-left: 3%;
+    z-index: 2;
 }
 
-#btn_limpiar{
-    width:130px; 
-    height: 35px; 
+#btn_limpiar {
+    width: 130px;
+    height: 35px;
     margin-top: 1.5%;
     font-size: 16px;
-    color:#ffffff;
-    background-color:rgb(0, 0, 0);
-    border-radius: 10px; 
-    margin-left: 3%;   
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-left: 3%;
 
 }
 
 /*=======Estilos del Formulario========*/
 
-.modal-dialog{
-    width:50%;
+.modal-dialog {
+    width: 50%;
     margin-top: 150px;
     background-color: #ffffffc5;
     max-width: none;
     border-radius: 15px;
-  }
-  
-  .modal .modal-title{
+}
+
+.modal .modal-title {
     font-size: 30px;
-    color: #191919; /*importante*/
-    text-align: center ;
-  } 
-  
-  .modal-header{
+    color: #191919;
+    /*importante*/
+    text-align: center;
+}
+
+.modal-header {
     display: block;
-    text-align: center;/*importante */
-  }
-  .modal .close{
+    text-align: center;
+    /*importante */
+}
+
+.modal .close {
     margin-top: -60px;
-  }
+}
 
 
-  /*=====ESTILOS DEL VIDOE DEL PARALLAX  */
+/*=====ESTILOS DEL VIDOE DEL PARALLAX  */
 
-  .video-container {
+.video-container {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -464,7 +504,8 @@ footer i:hover{
     left: 0;
     width: 100%;
     height: auto;
-    object-fit: cover; /* Esto asegura que el video cubra completamente el contenedor */
+    object-fit: cover;
+    /* Esto asegura que el video cubra completamente el contenedor */
 }
 
 .video-container h2 {
