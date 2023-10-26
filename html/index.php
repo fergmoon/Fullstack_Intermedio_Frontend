@@ -34,18 +34,17 @@ if (isset($_GET['status'])) {
 </head>
 
 
-<header>
+<!-- <header>
   <nav>
     <div>
       <ul id="main-contain" class="home">
         <li><a href="../html/index.php">Home</a></li>
         <li><a href="../html/fun.html">Fun</a></li>
-        <li><a href="../html/about.html">About</a></li>
-        <!-- <li><a href="#">Services</a></li> -->
+        <li><a href="../html/about.html">About</a></li>        
       </ul>
     </div>
   </nav>
-</header>
+</header> -->
 
 
 <body>
