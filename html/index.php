@@ -57,9 +57,9 @@ if (isset($_GET['status'])) {
 
   <section class="text-bloc">
     <p>From initial concepts to final products, each work is a testament to the creative journey. Lines, textures, precisely selected materials that transform ideas into objects that enhance everyday life.
-    Shape and function intertwine in each design. Each piece is a symphony of elegance and utility where every curve and every detail has a defined purpose.
+      Shape and function intertwine in each design. Each piece is a symphony of elegance and utility where every curve and every detail has a defined purpose.
     </p>
-    
+
     <section class="section-background parallax1">
       <h2>Innovation that drives the future</h2>
     </section>
@@ -83,14 +83,21 @@ if (isset($_GET['status'])) {
             <video autoplay muted loop>
               <source src="https://player.vimeo.com/external/535950529.sd.mp4?s=31702bc51cf2a829edbac94e33ba4d7400efc40b&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
             </video>
-            <p>Welcome to a place where creativity and functionality converge to shape a better future. Delve into the portfolio and discover the limitless potential of industrial design.</p>
 
-            <!-- <section class="parallax3 buttons"> -->
-            <!-- BOTON REGISTRARSE  -->
-            <button type="button" class="btn_register" data-toggle="modal" data-target="#register_modal">Registrate</button>
+            <section class="text-bloc">
+              <p>Welcome to a place where creativity and functionality converge to shape a better future. Delve into the portfolio and discover the limitless potential of industrial design.</p>
 
-            <!-- BOTON INGRESAR  -->
-            <button class="btn_login" data-toggle="modal" data-target="#login_modal">Ingresa</button>
+              <section class="parallax3 buttons">
+                <!-- BOTON REGISTRARSE  -->
+                <button type="button" class="btn_register" data-toggle="modal" data-target="#register_modal">Registrate</button>
+
+                <!-- BOTON INGRESAR  -->
+                <button class="btn_login" data-toggle="modal" data-target="#login_modal">Ingresa</button>
+              </section>
+
+            </section>
+
+
 
           </section>
 
