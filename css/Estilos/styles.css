@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
 :root {
     --fill: #a972cb;
@@ -10,9 +10,14 @@
     --up: #e4cb58;
     --slide: #8fc866;
     --offset: #19bc8b;
+    --green: green;
     --institucional: #0e02b4;
+    --blue: #0D3BFF;   
+    --celeste: #00B7FF;    
+    --gris: #828282;
+    --bg-color: #171717;
+    --bg-negro: #000000;
     --blanco:#ffffff;
-
   }
 
 * {
@@ -455,6 +460,15 @@ background-color: #ffffff;
 
 /*=====Botones Registro/Ingreso==========*/
 
+
+.form-container{
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(23, 23, 23, 0.5);
+    border-radius: 2px;
+
+}
+
 .btn_register {
     width: 40%;
     height: 5%;
@@ -465,9 +479,6 @@ background-color: #ffffff;
     z-index: 2;
     font-weight: 600;
   }
-
-
-
 
 /* .btn_register:hover,
 .btn_login:hover,
@@ -480,8 +491,6 @@ background-color: #ffffff;
   transform: translateY(-0.25em);
   transition: all .5s;
 }
-
-
 
 .btn_login {
     width: 40%;
@@ -515,17 +524,42 @@ background-color: #ffffff;
 
 /*=======Estilos del Formulario========*/
 
-.modal-dialog {
-    width: 50%;
-    margin-top: 150px;
-    background-color: #ffffffc5;
-    max-width: none;
-    border-radius: 15px;
+#register_modal{
+    background-color: rgba(0, 0, 0, 0.2);
+
 }
 
+.modal-dialog {
+    width:800px;
+    margin-top: 150px;
+    background-color:rgba(145, 145, 124, 0.5);
+    color: #FFFFFF;
+    /* max-width: 100%;   */
+    /* border-radius: 15px; */
+}
+.modal-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(161, 160, 143, 0.4);
+    
+}
+
+.modal-header{
+    /* background-color: rgba(25, 4, 253, 0.6); */
+    color: #ffffff;
+}
+
+.modal-body{
+    background-color:rgba(0, 0, 0, 0.6);
+    width: 90%;
+    margin-left: 5%;
+    height: 90%;
+    color: #FFFFFF;
+       
+}
 .modal .modal-title {
     font-size: 30px;
-    color: #191919;
+    color: #ffffff;
     /*importante*/
     text-align: center;
 }
@@ -533,7 +567,8 @@ background-color: #ffffff;
 .modal-header {
     display: block;
     text-align: center;
-    /*importante */
+    font-weight: 400;
+    
 }
 
 .modal .close {

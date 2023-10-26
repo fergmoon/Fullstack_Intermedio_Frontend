@@ -95,9 +95,6 @@ if (isset($_GET['status'])) {
               </section>
 
             </section>
-
-
-
           </section>
 
 
@@ -112,8 +109,9 @@ if (isset($_GET['status'])) {
                   </button>
                 </div>
                 <div class="modal-body">
+
                   <!-- Formulario de Registro START-->
-                  <form action="../back/register.php" method="POST">
+                  <form action="../back/register.php" method="POST" class="form-container">
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="inputnombres">Nombres</label>
@@ -143,10 +141,10 @@ if (isset($_GET['status'])) {
                         <label for="inputcontra">Contraseña</label>
                         <input type="password" class="form-control" name="pass" id="inputcontra" required>
                       </div>
-                      <div class="form-group col-md-3">
+                      <!-- <div class="form-group col-md-3">
                         <label for="inputcontra">Contraseña 2</label>
                         <input type="password" class="form-control" name="pass2" id="inputcontra" required>
-                      </div>
+                      </div> -->
                     </div>
                     <button name="register_btn" type="submit" class="btn_login">Registrarse</button>
                     <button type="reset" class="btn_register">Limpiar</button>
