@@ -414,6 +414,7 @@ background-color: #ffffff;
     z-index: 10;
 }
 
+
 .parallax3 h2{
     z-index: 2;
     margin: 0 10%;
@@ -436,10 +437,10 @@ background-color: #ffffff;
 }
 
 .parallax3 .buttons {
-    width:70%;
-    height: 200%;
-    /* background-color: aqua; */
-    margin: 7% 0 0 15%;
+    width:100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 7% 0 0 -.5%;
     font-size: 1dvw;
     justify-content: space-around;
     padding:5%;
@@ -461,23 +462,18 @@ background-color: #ffffff;
 /*=====Botones Registro/Ingreso==========*/
 
 
-.form-container{
-    max-width: 700px;
-    margin: 0 auto;
-    background: rgba(23, 23, 23, 0.5);
-    border-radius: 2px;
-
-}
 
 .btn_register {
-    width: 40%;
-    height: 5%;
-    font-size: 1.75dvw;
-    color: #000;
+    width: 180px;
+    height: 45px;
+    font-size: 25px;
+    color: #ffffff;
     background-color: #fff0;
     border: 3px solid var(--blanco);
     z-index: 2;
     font-weight: 600;
+    /* cursor: pointer;
+    transition: all .3s; */
   }
 
 /* .btn_register:hover,
@@ -485,18 +481,18 @@ background-color: #ffffff;
 #btn_limpiar:hover { */
     /* box-shadow: 10px 10px 5px rgb(255, 255, 255);
     transition: all .1s; */
-.btn_register:hover,
-.btn_register:focus {
+.btn_register:hover,.register_btn,
+.btn_register:focus,#btn_limpiar:hover{
   box-shadow: 0 0.7em 0.7em -0.5em var(--blanco);
   transform: translateY(-0.25em);
   transition: all .5s;
 }
 
 .btn_login {
-    width: 40%;
-    height: 5%;
-    font-size: 1.75dvw;
-    color: #000000;
+    width: 180px;
+    height: 45px;
+    font-size: 25px;
+    color: #ffffff;
     background-color: #fff0;
     border: 3px solid var(--blanco);
     z-index: 2;
@@ -504,15 +500,29 @@ background-color: #ffffff;
 }
 
 .btn_login:hover,
-.btn_login:focus {
+.btn_login:focus,#btn_limpiar:hover {
   box-shadow: 0 0.7em 0.7em -0.5em var(--blanco);
   transform: translateY(-0.25em);
   transition: all .5s;
+  
 }
 
+.register_btn {
+    width: 180px;
+    height: 45px;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #fff0;
+    border: 3px solid var(--blanco);
+    z-index: 2;
+    font-weight: 600;
+}
+
+
 #btn_limpiar {
-    width: 130px;
-    height: 35px;
+    width: 180px;
+    height: 45px;
+    font-size: 25px;
     margin-top: 1.5%;
     font-size: 16px;
     color: #ffffff;
@@ -524,56 +534,98 @@ background-color: #ffffff;
 
 /*=======Estilos del Formulario========*/
 
-#register_modal{
-    background-color: rgba(0, 0, 0, 0.2);
-
-}
-
-.modal-dialog {
-    width:800px;
-    margin-top: 150px;
-    background-color:rgba(145, 145, 124, 0.5);
-    color: #FFFFFF;
-    /* max-width: 100%;   */
-    /* border-radius: 15px; */
-}
-.modal-content{
+.modal-open{
     width: 100%;
     height: 100%;
-    background-color: rgba(161, 160, 143, 0.4);
-    
+    background-color: #000000;
+    margin:0;
+    padding: 0;    
 }
+
+#register_modal{
+    /* background-color: rgba(0, 242, 255, 0.2); */
+    width: 100%;
+    height: 70%;
+    margin-top: 5%;  
+    justify-content: center;
+    align-items:center;     
+}
+
+/* .modal-dialog {
+    width: 750px;
+    height: 91.5%;
+    background-color:rgba(11, 250, 3, 0.5);    
+    color: #FFFFFF; 
+} */
+
+.modal-content{
+    width: 700px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    justify-content: center;  
+    padding: 5%;
+}
+
 
 .modal-header{
-    /* background-color: rgba(25, 4, 253, 0.6); */
+    width: 650px;
+    background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
-}
-
-.modal-body{
-    background-color:rgba(0, 0, 0, 0.6);
-    width: 90%;
-    margin-left: 5%;
-    height: 90%;
-    color: #FFFFFF;
-       
-}
-.modal .modal-title {
-    font-size: 30px;
-    color: #ffffff;
-    /*importante*/
-    text-align: center;
-}
-
-.modal-header {
     display: block;
     text-align: center;
     font-weight: 400;
-    
+}
+
+.modal .modal-title {
+    font-size: 35px;
+    color:#ffffff;    
+    text-align: center;
+    font-weight: 600;
 }
 
 .modal .close {
-    margin-top: -60px;
+    margin-top: -70px;
+    font-size: 3dvw;
+    color: #0D3BFF;
 }
+
+.modal-body{
+    display: block;
+    width: 650px;
+    height: 450px;
+    margin-top: 2%;
+    background-color: #000000;
+    justify-content:center;
+    align-items: center;
+    
+}
+.form-container{
+    width: 600px;
+    height: 400px;
+    margin-left: 11px;
+    margin-top: 2%;
+    background: rgb(0, 0, 0);
+    border-radius: 2px;
+    color: #6a6a6a;
+    border:solid 2px #0D3BFF ;
+    padding: 3%; 
+    font-family: 'Gruppo',sans-serif;  
+}
+
+.form-row .form-control{  /*dentro de la casilla*/
+    color: #d3d3d3;
+    font-size: 16px;
+    background-color: #000;
+    border: solid 2px #0D3BFF
+}
+
+.form-row {
+    color:#e3e3e3
+}
+
+
+
+
 
 
 /*=====ESTILOS DEL VIDOE DEL PARALLAX  */
