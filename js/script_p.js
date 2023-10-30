@@ -1,4 +1,4 @@
- document.addEventListener('DOMContentLoaded', function() {
+//  document.addEventListener('DOMContentLoaded', function() {
 
 
  var jqueryScript = document.createElement('script');
@@ -22,7 +22,7 @@
 
 
 
-$('#parallax').parallax({
+('#parallax').parallax({  /* $('#parallax').parallax({ */
     invertX: true,
     invertY: true,
     scalarX: 15,
@@ -141,4 +141,4 @@ particlesJS("particles-js", {
     "retina_detect": true
 });
 
-});
+// });

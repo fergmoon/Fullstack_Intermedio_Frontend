@@ -37,7 +37,7 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate3d(-50%, -50%, 0);
+    /* -webkit-transform: translate3d(-50%, -50%, 0);  */
     transform: translate3d(-50%, -50%, 0);
 }
 
@@ -49,7 +49,7 @@ a {
     top: 65%;
     left: 50%;
     letter-spacing: 0.05em;
-    -webkit-transform: translate3d(-50%, -50%, 0);
+    /* -webkit-transform: translate3d(-50%, -50%, 0); */
     transform: translate3d(-50%, -50%, 0);
     text-decoration: none;
     transition: all 200ms ease;
@@ -57,7 +57,7 @@ a {
 }
 
 a:hover {
-    background: white;
+    background: rgb(255, 255, 255);
     color: black;
 }
 
@@ -66,33 +66,29 @@ a:hover {
 }
 
 .some-more-space1 {
-    -webkit-animation: rotate 15s 0.1s infinite linear;
+    /* -webkit-animation: rotate 15s 0.1s infinite linear; */
     animation: rotate 15s 0.1s infinite linear;
-}
-
-@-webkit-keyframes rotate {
-    0% {
-        -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
-        transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
-        transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
-    }
 }
 
 @keyframes rotate {
     0% {
-        -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
         transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
     }
 
     100% {
-        -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
         transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
     }
 }
+
+/* @-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotateZ(0deg) translate3d(0, 1.5%, 0) rotateZ(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotateZ(360deg) translate3d(0, 1.5%, 0) rotateZ(-360deg);
+    }
+} */
 
 html {
     height: 1000px;
