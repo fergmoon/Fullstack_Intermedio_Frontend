@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Oswald');
+
+html,
+body {
+    color: white;
+    background: black;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 5%;
+    overflow: hidden;
+}
+
+#background {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#welcomeContainer {
+    z-index: 0;
+    width: 50%;
+    height: 20%;
+    display: inline-block;
+    position: relative;
+}
+
+#welcome {
+    font-family: 'Major Mono Display', monospace;
+    text-shadow: 0 0 40px #FF0000;
+    letter-spacing: 10px;
+    color: #af0000;
+    user-select: none;
+    float: right;
+    text-align: center;
+    font-size: 75px;
+    transform: translate(-50%, -50%);
+}
+
+#letters {
+    user-select: none;
+    z-index: 1;
+    position: absolute;
+}

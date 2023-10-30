@@ -13,7 +13,7 @@ if ($conexion->connect_errno){
     echo "error de conexion";
     exit();
 }else{
-    echo "Conexión OK-";
+    // echo "Conexión OK-";
 }
 
 

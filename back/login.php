@@ -36,7 +36,8 @@ if (isset($_POST['login_btn'])){
             $_SESSION['usuario'] = $datos['id_person'];
             $_SESSION['email'] = $datos['email'];                        
       }
-      header('location: ../app/index.php');
+      // header('location: ../app/index.php');
+      header('location: ../app/index_w.php');
    }else{
    header('location: ../html/index.php?status=3');
    }

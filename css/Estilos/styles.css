@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import "variables";
+@import "functions";
+@import "path";
+@import "core";
+@import "icons";
+@import "extras";
+@import "animated";
 
 :root {
     --fill: #a972cb;
@@ -12,13 +19,13 @@
     --offset: #19bc8b;
     --green: green;
     --institucional: #0e02b4;
-    --blue: #0D3BFF;   
-    --celeste: #00B7FF;    
+    --blue: #0D3BFF;
+    --celeste: #00B7FF;
     --gris: #828282;
     --bg-color: #171717;
     --bg-negro: #000000;
-    --blanco:#ffffff;
-  }
+    --blanco: #ffffff;
+}
 
 * {
     border: 0;
@@ -27,6 +34,19 @@
     box-sizing: border-box;
     font-family: 'Gruppo', sans-serif;
     /* background-color: #828072; */
+    font-smooth: auto;
+    font-smooth: never;
+    font-smooth: always;
+
+    /* <length> value */
+    font-smooth: 2em;
+
+    /* Global values */
+    font-smooth: inherit;
+    font-smooth: initial;
+    font-smooth: revert;
+    font-smooth: revert-layer;
+    font-smooth: unset;
 }
 
 #main-contain {
@@ -323,13 +343,16 @@ Change the background color of the dropdown button when the dropdown content is 
 
 h2 {
     /*Textos grandes*/
-    font-size: 100px;
+    font-size: 4dvw;
     color: rgba(255, 255, 255, 0.7);
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     background-color: #000000ab;
-    width: 75%;
-    padding: 1%;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
 
 
 }
@@ -349,7 +372,7 @@ h2 {
     padding: 0;
 }
 
-.parallax {
+.parallax_i {
     /* background-image: url("https://images.unsplash.com/photo-1558985040-ed4d5029dd50?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzODkxNjg&ixlib=rb-1.2.1&q=80"); */
     background-image: url("../../img/home/07.jpg");
 }
@@ -357,17 +380,18 @@ h2 {
 .parallax1 {
     /* background-image: url("https://images.unsplash.com/photo-1610128114197-485d933885c5?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTA2Nzc&ixlib=rb-1.2.1&q=80");*/
     background-image: url("../../img/home/09.jpg");
-} 
+}
 
 h3 {
     color: rgb(0, 255, 251);
     font-size: 3dvw;
     text-align: center;
     font-weight: 400;
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
-.text-bloc {  /*fondo textos Parallax*/
+.text-bloc {
+    /*fondo textos Parallax*/
     margin: 0;
     background-color: #000000;
     height: auto;
@@ -379,17 +403,17 @@ h3 {
 .text-bloc p {
     display: flex;
     margin: 0 8%;
-    font-size: 2dvw;
+    font-size: 1.5dvw;
     justify-content: space-around;
     text-align: justify;
-    font-weight: 400;
-    color: #FFFFFF;
+    font-weight: 600;
+    color: #9a9a9a;
     word-spacing: .5dvw;
 }
 
 .parallax1 .text-bloc {
-    color: #8fc866 ;
-    }
+    color: #8fc866;
+}
 
 .parallax2 {
     /* background-image: url("https://images.unsplash.com/photo-1562095241-8c6714fd4178?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjIzOTA5OTg&ixlib=rb-1.2.1&q=80"); */
@@ -397,7 +421,7 @@ h3 {
 }
 
 .parallax2 p {
-background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 /* .parallax3 h2, */
@@ -410,12 +434,13 @@ background-color: #ffffff;
     margin: 0;
     display: flex;
     justify-content: center;
-    overflow: hidden;  /* Asegura que el video no se desborde */
+    overflow: hidden;
+    /* Asegura que el video no se desborde */
     z-index: 10;
 }
 
 
-.parallax3 h2{
+.parallax3 h2 {
     z-index: 2;
     margin: 0 10%;
     color: rgb(255, 255, 255);
@@ -437,22 +462,22 @@ background-color: #ffffff;
 }
 
 .parallax3 .buttons {
-    width:100%;
+    width: 100%;
     height: 10%;
     background-color: rgba(0, 0, 0, 0.5);
     margin: 7% 0 0 -.5%;
     font-size: 1dvw;
     justify-content: space-around;
-    padding:5%;
+    padding: 5%;
 }
 
 
-.parallax3 .text-bloc p{
+.parallax3 .text-bloc p {
     width: auto;
-    height: 20%;    
+    height: 20%;
     background-color: #00000084;
-    margin: 0 0px 0 -5px !important;       
-    font-size: 1.5dvw;    
+    margin: 0 0px 0 -5px !important;
+    font-size: 1.5dvw;
     font-weight: 400;
     padding: 3% 10%;
     font-family: 'montserrat', sans-serif;
@@ -472,20 +497,17 @@ background-color: #ffffff;
     border: 3px solid var(--blanco);
     z-index: 2;
     font-weight: 600;
-    /* cursor: pointer;
-    transition: all .3s; */
-  }
 
-/* .btn_register:hover,
-.btn_login:hover,
-#btn_limpiar:hover { */
-    /* box-shadow: 10px 10px 5px rgb(255, 255, 255);
-    transition: all .1s; */
-.btn_register:hover,.register_btn,
-.btn_register:focus,#btn_limpiar:hover{
-  box-shadow: 0 0.7em 0.7em -0.5em var(--blanco);
-  transform: translateY(-0.25em);
-  transition: all .5s;
+}
+
+
+.btn_register:hover,
+.register_btn,
+.btn_register:focus,
+#btn_limpiar:hover {
+    box-shadow: 0 0.7em 0.7em -0.5em var(--blanco);
+    transform: translateY(-0.25em);
+    transition: all .5s;
 }
 
 .btn_login {
@@ -500,11 +522,12 @@ background-color: #ffffff;
 }
 
 .btn_login:hover,
-.btn_login:focus,#btn_limpiar:hover {
-  box-shadow: 0 0.7em 0.7em -0.5em var(--blanco);
-  transform: translateY(-0.25em);
-  transition: all .5s;
-  
+.btn_login:focus,
+#btn_limpiar:hover {
+    box-shadow: 0 0.7em 0.7em -0.5em var(--blanco);
+    transform: translateY(-0.25em);
+    transition: all .5s;
+
 }
 
 .register_btn {
@@ -534,21 +557,22 @@ background-color: #ffffff;
 
 /*=======Estilos del Formulario========*/
 
-.modal-open{
+.modal-open {
     width: 100%;
     height: 100%;
     background-color: #000000;
-    margin:0;
-    padding: 0;    
+    margin: 0;
+    padding: 0;
 }
 
-#register_modal{
+#register_modal {
     /* background-color: rgba(0, 242, 255, 0.2); */
     width: 100%;
     height: 70%;
-    margin-top: 5%;  
+    margin-top: 5%;
+    margin-left: 0;
     justify-content: center;
-    align-items:center;     
+    align-items: center;
 }
 
 /* .modal-dialog {
@@ -558,16 +582,16 @@ background-color: #ffffff;
     color: #FFFFFF; 
 } */
 
-.modal-content{
+.modal-content {
     width: 700px;
     height: 600px;
-    background-color: rgba(0, 0, 0, 0.6); 
-    justify-content: center;  
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
     padding: 5%;
 }
 
 
-.modal-header{
+.modal-header {
     width: 650px;
     background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
@@ -578,28 +602,29 @@ background-color: #ffffff;
 
 .modal .modal-title {
     font-size: 35px;
-    color:#ffffff;    
+    color: #ffffff;
     text-align: center;
     font-weight: 600;
 }
 
 .modal .close {
     margin-top: -70px;
-    font-size: 3dvw;
+    font-size: 3.5dvw;
     color: #0D3BFF;
 }
 
-.modal-body{
+.modal-body {
     display: block;
     width: 650px;
     height: 450px;
     margin-top: 2%;
     background-color: #000000;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    
+
 }
-.form-container{
+
+.form-container {
     width: 600px;
     height: 400px;
     margin-left: 11px;
@@ -607,12 +632,13 @@ background-color: #ffffff;
     background: rgb(0, 0, 0);
     border-radius: 2px;
     color: #6a6a6a;
-    border:solid 2px #0D3BFF ;
-    padding: 3%; 
-    font-family: 'Gruppo',sans-serif;  
+    border: solid 2px #0D3BFF;
+    padding: 3%;
+    font-family: 'Gruppo', sans-serif;
 }
 
-.form-row .form-control{  /*dentro de la casilla*/
+.form-row .form-control {
+    /*dentro de la casilla*/
     color: #d3d3d3;
     font-size: 16px;
     background-color: #000;
@@ -620,7 +646,7 @@ background-color: #ffffff;
 }
 
 .form-row {
-    color:#e3e3e3
+    color: #e3e3e3
 }
 
 
@@ -628,7 +654,7 @@ background-color: #ffffff;
 
 
 
-/*=====ESTILOS DEL VIDOE DEL PARALLAX  */
+/*=====ESTILOS DEL VIDEO DEL PARALLAX  */
 
 .video-container {
     position: relative;
@@ -655,3 +681,31 @@ background-color: #ffffff;
     font-size: 3em;
     color: white;
 }
+
+#btn-continuar {
+    background-color: #007bff;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto */
+    font-size: 16px;
+    padding: 10px 20px;
+    /* Espacio alrededor del texto */
+    border: none;
+    /* Sin borde */
+    cursor: pointer;
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+#btn-continuar:hover {
+    background-color: #0056b3;
+    /* Cambio de color al pasar el ratón */
+
+}
+
+.welcome_container {
+    background-color: #00B7FF;
+
+}
+
+/*======Estilos Pagina Welcome 2*/

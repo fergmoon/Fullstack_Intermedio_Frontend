@@ -34,7 +34,7 @@ if (isset($_GET['status'])) {
 </head>
 
 
-<!-- <header>
+<header>
   <nav>
     <div>
       <ul id="main-contain" class="home">
@@ -44,13 +44,13 @@ if (isset($_GET['status'])) {
       </ul>
     </div>
   </nav>
-</header> -->
+</header>
 
 
 <body>
   <!-- Container element -->
 
-  <section class="section-background parallax">
+  <section class="section-background parallax_i">
     <h2>Design. Form and function</h2>
   </section>
 
