@@ -637,17 +637,25 @@ h3 {
     font-family: 'Gruppo', sans-serif;
 }
 
-.form-row .form-control {
-    /*dentro de la casilla*/
-    color: #d3d3d3;
-    font-size: 16px;
-    background-color: #000;
-    border: solid 2px #0D3BFF
+.form-row { /*textos del form titulos*/
+    color: #ff0000;
+    text-shadow: 0 0 30px #004cff;   
 }
 
-.form-row {
-    color: #e3e3e3
+.form-row .form-control {
+    /*dentro de la casilla*/
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
 }
+
+
 
 
 

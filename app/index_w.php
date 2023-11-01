@@ -30,20 +30,49 @@ $email = $_SESSION['email'];
     <meta name="keywords" content="Portfolio">
     <meta name="author" content="Luis Fernando Gómez Parada">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" media="screen" href="../css/Estilos/style_welcome">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="screen" href="../css/Estilos/style_welcome">
     <title>Welcome</title>
 
 </head>
 
 <body>
 
-<div id="background" onmousemove="mse(event)" onclick="scr()"></div>
-<div id="welcomeContainer"><h1 id="welcome"></h1></div>
-<p id="letters">I change when you move your mouse</p>
+    <div id="background" onmousemove="mse(event)" onclick="scr()"></div>
+    
+    <div id="welcomeContainer">
+        <h1 id="welcome"></h1>
+    </div>
+    <h1 class="saludo_usuario"><?php echo $nombre . ' ' . $apellido; ?></h1>
+    <!-- <p id="letters">I change when you move your mouse</p> -->
+
+    
+    <div class="login-box">
+  <!-- <h2>Login</h2> -->
+  <form>
+    <div class="user-box">
+      <!-- <input type="text" name="" required=""> -->
+      <!-- <label>Username</label> -->
+    </div>
+    <div class="user-box">
+      <!-- <input type="password" name="" required=""> -->
+      <!-- <label>Password</label> -->
+    </div>
+    <a href="../html/fun.html">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  </form>
+</div>
 
 
-<script src="../js/script_w.js"></script>
+
+
+    <script src="../js/script_w.js"></script>
 </body>
 
 </html>
