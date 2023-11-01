@@ -56,7 +56,7 @@ $email = $_SESSION['email'];
                 <span></span>
                 <span></span>
                 <span></span>
-                Submit
+                Entrar
             </a>
         </form>
     </div>
