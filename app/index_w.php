@@ -40,34 +40,26 @@ $email = $_SESSION['email'];
 <body>
 
     <div id="background" onmousemove="mse(event)" onclick="scr()"></div>
-    
+
     <div id="welcomeContainer">
         <h1 id="welcome"></h1>
     </div>
     <h1 class="saludo_usuario"><?php echo $nombre . ' ' . $apellido; ?></h1>
-    <!-- <p id="letters">I change when you move your mouse</p> -->
+    <p id="letters"> </p>
 
-    
+
     <div class="login-box">
-  <!-- <h2>Login</h2> -->
-  <form>
-    <div class="user-box">
-      <!-- <input type="text" name="" required=""> -->
-      <!-- <label>Username</label> -->
+        <!-- <h2>Login</h2> -->
+        <form>
+            <a href="../html/fun.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </a>
+        </form>
     </div>
-    <div class="user-box">
-      <!-- <input type="password" name="" required=""> -->
-      <!-- <label>Password</label> -->
-    </div>
-    <a href="../html/fun.html">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Submit
-    </a>
-  </form>
-</div>
 
 
 
