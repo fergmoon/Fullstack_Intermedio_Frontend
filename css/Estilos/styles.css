@@ -33,20 +33,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gruppo', sans-serif;
-    /* background-color: #828072; */
-    font-smooth: auto;
+    background-color: rgba(0, 0, 0, 0.5);
     font-smooth: never;
-    font-smooth: always;
+    font-smooth: never;
+    font-smooth: never;
 
     /* <length> value */
     font-smooth: 2em;
 
-    /* Global values */
-    font-smooth: inherit;
-    font-smooth: initial;
-    font-smooth: revert;
-    font-smooth: revert-layer;
-    font-smooth: unset;
 }
 
 #main-contain {
@@ -103,14 +97,17 @@ menu-main nav ul li a {
     text-decoration: none;
     margin: 35px;
     /*textos menu separados*/
-    color: #303030;
+    color: #0d0d0d;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
 }
 
 menu-main nav ul li a:hover {
-    color: #f9f9f97e;
+    color: #313131f0;
+    transform: all 1s ease;
+    text-decoration: none;
+
 }
 
 .title ul {
@@ -185,7 +182,8 @@ menu-main nav ul li a:hover {
     filter: grayscale(0%);
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     transform: scale(1.05);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 255, 242);
+    box-shadow: ;
 }
 
 /*===========FOOTER  SOCIAL - MEDIA  *BEGINS*============*/
@@ -486,17 +484,17 @@ h3 {
 
 /*=====Botones Registro/Ingreso==========*/
 
-
-
 .btn_register {
-    width: 180px;
-    height: 45px;
-    font-size: 25px;
+    width: 30%;
+    height: 20%;
+    font-size: larger;
     color: #ffffff;
     background-color: #fff0;
     border: 3px solid var(--blanco);
     z-index: 2;
     font-weight: 600;
+    margin-left: 0;
+
 
 }
 
@@ -511,14 +509,15 @@ h3 {
 }
 
 .btn_login {
-    width: 180px;
-    height: 45px;
-    font-size: 25px;
+    width: 35%;
+    height: 20%;
+    font-size: larger;
     color: #ffffff;
     background-color: #fff0;
     border: 3px solid var(--blanco);
     z-index: 2;
     font-weight: 600;
+    justify-self: center;
 }
 
 .btn_login:hover,
@@ -530,36 +529,55 @@ h3 {
 
 }
 
-.register_btn {
-    width: 180px;
-    height: 45px;
-    font-size: 25px;
+#register_btn {
+    position: relative;
+    width: 35%;
+    height: 25%;
+    font-size: larger;
     color: #ffffff;
-    background-color: #fff0;
-    border: 3px solid var(--blanco);
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid var(--blanco);
     z-index: 2;
     font-weight: 600;
 }
 
+.botones {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 10%;
+    /* background-color: #ef6eae; */
+    padding: 2%;
+    margin: 2%;
+    justify-content: space-around;
+
+}
+
 
 #btn_limpiar {
-    width: 180px;
-    height: 45px;
-    font-size: 25px;
-    margin-top: 1.5%;
-    font-size: 16px;
+    position: relative;
+    width: 35%;
+    height: 25%;
+    font-size: larger;
     color: #ffffff;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-    margin-left: 3%;
+    background-color: #fff0;
+    border: 2px solid var(--blanco);
+    z-index: 2;
+    font-weight: 600;
+    justify-content: space-between;
+
+
 
 }
 
 /*=======Estilos del Formulario========*/
 
 .modal-open {
+    /*abre el modal pantalla fade*/
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: #000000;
     margin: 0;
     padding: 0;
@@ -569,98 +587,100 @@ h3 {
     /* background-color: rgba(0, 242, 255, 0.2); */
     width: 100%;
     height: 70%;
-    margin-top: 5%;
     margin-left: 0;
-    justify-content: center;
-    align-items: center;
 }
 
 /* .modal-dialog {
-    width: 750px;
-    height: 91.5%;
-    background-color:rgba(11, 250, 3, 0.5);    
-    color: #FFFFFF; 
+    width: 100vh;
+    height: 90%;
+    background-color:rgba(11, 250, 3, 0.5);   
 } */
 
 .modal-content {
-    width: 700px;
-    height: 600px;
+    /*Atras ?*/
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     justify-content: center;
-    padding: 5%;
+    align-items: center;
+    margin-top: 35%;
 }
 
-
 .modal-header {
-    width: 650px;
-    background-color: rgba(0, 0, 0, 0.6);
+    /*Caja del Titulo*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.448);
     color: #ffffff;
-    display: block;
-    text-align: center;
     font-weight: 400;
+
 }
 
 .modal .modal-title {
-    font-size: 35px;
+    font-size: 1.75dvw;
     color: #ffffff;
-    text-align: center;
+    align-self: center;
     font-weight: 600;
 }
 
 .modal .close {
     margin-top: -70px;
-    font-size: 3.5dvw;
-    color: #0D3BFF;
+    font-size: 45px;
+    color: #ffffff;
+    align-self: center;
 }
 
 .modal-body {
     display: block;
-    width: 650px;
-    height: 450px;
-    margin-top: 2%;
-    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    /* background-color: #15ff00; */
     justify-content: center;
     align-items: center;
+    border-radius: 2%;
 
 }
 
 .form-container {
-    width: 600px;
-    height: 400px;
-    margin-left: 11px;
-    margin-top: 2%;
-    background: rgb(0, 0, 0);
-    border-radius: 2px;
-    color: #6a6a6a;
+    /*caja formulario contorno?*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size: .8dvw;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.551);
     border: solid 2px #0D3BFF;
-    padding: 3%;
     font-family: 'Gruppo', sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
-.form-row { /*textos del form titulos*/
-    color: #ff0000;
-    text-shadow: 0 0 30px #004cff;   
+.form-row {
+    /* caja textos del form titulos*/
+    width: 100%;
+    height: 30%;
+    color: #b3b3b3;
+    /* text-shadow: 0 0 2px #fbfbfb; */
+    background-color: #0000003e;
+
 }
 
 .form-row .form-control {
     /*dentro de la casilla*/
     width: 100%;
-    padding: 10px 0;
+    font-size: 1dvw;
+    font-weight: 300;
+    color: #00000056;
     font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    overflow: hidden;
     outline: none;
-    background: transparent;
+    background-color: #000000;
+
 }
-
-
-
-
-
-
-
 
 /*=====ESTILOS DEL VIDEO DEL PARALLAX  */
 

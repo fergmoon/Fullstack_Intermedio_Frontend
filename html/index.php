@@ -128,7 +128,7 @@ if (isset($_GET['status'])) {
                         <input type="date" class="form-control" name="birth" id="inputfecha_nacimiento" required>
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="inputnumero_id">Número de Identificación (Usuario)</label>
+                        <label for="inputnumero_id">Nº Identificación (Usuario)</label>
                         <input type="text" class="form-control" name="id_person" id="inputnumero_id" required>
                       </div>
                     </div>
@@ -146,10 +146,13 @@ if (isset($_GET['status'])) {
                         <input type="password" class="form-control" name="pass2" id="inputcontra" required>
                       </div> -->
                     </div>
-                    <button name="register_btn" type="submit" class="btn_login">Registrarse</button>
-                    <button type="reset" class="btn_register">Limpiar</button>
+                    <div class="botones">
+                    <button name="register_btn" type="submit" class="btn_login" id="register_btn">Registrarse</button>
+                    <button type="reset" class="btn_register" id="btn_limpiar">Limpiar</button>
+                    </div>
+                    
                   </form>
-                  <!-- Formulario de Registro END--> ...
+                  <!-- Formulario de Registro END-->
                 </div>
               </div>
             </div>
@@ -169,7 +172,7 @@ if (isset($_GET['status'])) {
                   <form action="../back/login.php" method="POST">
                     <div class="form-row">
                       <div class="form-group col-md-6">
-                        <label for="inputnumero_id">Número de Identificación (usuario)</label>
+                        <label for="inputnumero_id">Nº Identificación (usuario)</label>
                         <input type="text" class="form-control" name="id_person" id="inputnumero_id" required>
                       </div>
                       <div class="form-group col-md-6">
