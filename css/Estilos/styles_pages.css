@@ -72,9 +72,11 @@ menu-main nav ul li a{
 }
 
 menu-main nav ul li a:hover{
-    color:#9d9d9d7e;
-    transition: all 1s ease;
-    text-decoration: none;
+    color:rgb(211, 211, 211);
+    transition: all .5s ease;
+    text-decoration: none;    
+    text-shadow: 0 0 10px #979797;
+    transform: scale(1.1);
 }
 
 .title ul{
@@ -301,3 +303,30 @@ footer {
   /* Change the background color of the dropdown button when the dropdown content is shown */
   /* .dropdown:hover .dropbtn {background-color: #bbbbbb;}  */
 
+  footer #contact {
+    width: 25%;
+    left: 37%;
+    margin-left: 0;
+    display: inline-flex;
+    height: 25px;
+    margin-bottom: 50px;
+    /* background-color: #ff0000e3;    */
+}
+
+footer #contact i {
+    width: 20%;
+    margin-left: 4%;
+    padding: 5px;
+    text-align: center;
+    color: rgb(21, 21, 21);
+    font-size: 20px;
+    transition: all .3s;
+    justify-content: space-around;
+    /* background-color: aqua; */
+}
+
+footer #contact i:hover {
+    color: rgb(158, 158, 158);
+    font-size: 25px;
+    transition: all .5s;
+}

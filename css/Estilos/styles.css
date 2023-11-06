@@ -33,7 +33,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gruppo', sans-serif;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0);
     font-smooth: never;
     font-smooth: never;
     font-smooth: never;
@@ -202,7 +202,7 @@ footer i {
     margin-left: 4%;
     padding: 5px;
     text-align: center;
-    color: #ffffff;
+    color: rgb(21, 21, 21);
     font-size: 20px;
     transition: all .3s;
     justify-content: space-around;
@@ -210,7 +210,7 @@ footer i {
 }
 
 footer i:hover {
-    color: white;
+    color: rgb(158, 158, 158);
     font-size: 25px;
     transition: all .5s;
 }
@@ -345,7 +345,7 @@ h2 {
     color: rgba(255, 255, 255, 0.7);
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    background-color: #000000ab;
+    background-color: rgba(0, 0, 0, 0.7);
     width: auto;
     justify-content: center;
     align-items: center;
@@ -419,7 +419,7 @@ h3 {
 }
 
 .parallax2 p {
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 /* .parallax3 h2, */
@@ -473,7 +473,7 @@ h3 {
 .parallax3 .text-bloc p {
     width: auto;
     height: 20%;
-    background-color: #00000084;
+    background-color: #000000c8;
     margin: 0 0px 0 -5px !important;
     font-size: 2dvw;
     font-weight: 400;
@@ -652,20 +652,21 @@ h3 {
     font-size: .8dvw;
     font-weight: 600;
     background: rgba(0, 0, 0, 0.551);
-    border: solid 2px #ffffff7e;
+    border: solid 2px #ffffffcd;
     font-family: 'Gruppo', sans-serif;
     justify-content: center;
     align-items: center;
     outline: none;
+    color:#fff;
 }
 
 .form-row {
     /* caja textos del form titulos*/
     width: 100%;
     height: 30%;
-    color: #b3b3b3;
+    color: #f8f8f8;
     /* text-shadow: 0 0 2px #fbfbfb; */
-    background-color: #0000003e;
+    background-color: #00000093;
 }
 
 .form-row .form-control {
@@ -674,11 +675,12 @@ h3 {
     font-size: 1dvw;
     font-weight: 300;
     font-size: 16px;
+    color: #fff;
     text-decoration: none;
     overflow: hidden;    
     background-color: #000000;
     border-style: none;
-    border-bottom: solid 2px rgba(255, 255, 255, 0.35);
+    border-bottom: solid 2px rgba(255, 255, 255, 0.522);
     border-radius: 0;
     z-index: 10;
 }
