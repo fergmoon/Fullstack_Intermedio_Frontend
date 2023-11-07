@@ -34,7 +34,7 @@ if (isset($_GET['status'])) {
 </head>
 
 
-<header>
+<!-- <header>
   <nav>
     <div>
       <ul id="main-contain" class="home">
@@ -44,7 +44,7 @@ if (isset($_GET['status'])) {
       </ul>
     </div>
   </nav>
-</header>
+</header> -->
 
 
 <body>
